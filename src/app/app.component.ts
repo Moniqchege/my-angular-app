@@ -1,19 +1,18 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+
+@Component({
+  selector: 'app-user',
+  template: `
+    Username: {{ username }}
+  `,
+})
+export class UserComponent {
+  username = 'youngTech';
+}
 
 @Component({
   selector: 'app-root',
-  template: `
-  Welcome to Angular, {{ city }}, {{ 1 + 1}}
-  `,
-  styles: `
-  :host {
-  color: #a144eb;
-  }
-  `
-  
+  template: ``,
+  imports: [],
 })
-export class AppComponent {
-  title = 'my-angular-app';
-  city = 'Nairobi';
-}
+export class AppComponent {}
